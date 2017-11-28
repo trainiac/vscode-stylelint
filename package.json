@@ -33,6 +33,8 @@
     "onLanguage:postcss",
     "onLanguage:scss",
     "onLanguage:sugarss",
+    "onLanguage:vue",
+    "onLanguage:html",
     "workspaceContains:node_modules/stylelint-processor-styled-components/package.json"
   ],
   "main": "index.js",
