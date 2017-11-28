@@ -70,7 +70,12 @@
           ],
           "default": [],
           "description": "A optional set of additional document types to run stylelint against."
-        }
+        },
+        "stylelint.syntax": {
+          "type": [ "string", "null"],
+          "default": "null",
+          "description": "Set the stylelint syntax."
+        },
       }
     },
     "jsonValidation": [
