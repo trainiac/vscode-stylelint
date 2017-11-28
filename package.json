@@ -29,12 +29,16 @@
   "qna": "https://stackoverflow.com/questions/tagged/vscode+stylelint",
   "activationEvents": [
     "onLanguage:css",
+    "onLanguage:html",
     "onLanguage:less",
+    "onLanguage:markdown",
     "onLanguage:postcss",
     "onLanguage:scss",
     "onLanguage:sugarss",
+    "onLanguage:svg",
     "onLanguage:vue",
-    "onLanguage:html",
+    "onLanguage:vue-html",
+    "onLanguage:xml",
     "workspaceContains:node_modules/stylelint-processor-styled-components/package.json"
   ],
   "main": "index.js",
@@ -70,6 +74,11 @@
           ],
           "default": [],
           "description": "A optional set of additional document types to run stylelint against."
+        },
+        "stylelint.syntax": {
+          "type": [ "string", "null"],
+          "default": null,
+          "description": "Set the stylelint syntax."
         }
       }
     },

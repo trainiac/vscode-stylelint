@@ -6,6 +6,7 @@ const stylelintVSCode = require('stylelint-vscode');
 
 let config;
 let configOverrides;
+let syntax;
 
 const connection = langServer.createConnection(process.stdin, process.stdout);
 const documents = new langServer.TextDocuments();
@@ -29,7 +30,9 @@ function validate(document) {
     options.configOverrides = configOverrides;
   }
 
-  if (supportedCustomSyntaxes.has(document.languageId)) {
+  if (supportedCustomSyntaxes.has(syntax)) { 
+    options.syntax = syntax;
+  } else if (supportedCustomSyntaxes.has(document.languageId)) {
     options.syntax = document.languageId;
   }
 
@@ -66,6 +69,7 @@ connection.onInitialize(() => {
 });
 connection.onDidChangeConfiguration(params => {
   const {settings} = params;
+  syntax = settings.stylelint.syntax;
   config = settings.stylelint.config;
   configOverrides = settings.stylelint.configOverrides;
 
