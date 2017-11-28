@@ -30,8 +30,10 @@ function validate(document) {
     options.configOverrides = configOverrides;
   }
 
-  if (syntax || supportedCustomSyntaxes.has(document.languageId)) {
-    options.syntax = syntax || document.languageId;
+  if (supportedCustomSyntaxes.has(syntax)) { 
+    options.syntax = syntax;
+  } else if (supportedCustomSyntaxes.has(document.languageId)) {
+    options.syntax = document.languageId;
   }
 
   return stylelintVSCode(options).then(diagnostics => {
@@ -67,7 +69,7 @@ connection.onInitialize(() => {
 });
 connection.onDidChangeConfiguration(params => {
   const {settings} = params;
-  syntax = setttings.stylelint.syntax;
+  syntax = settings.stylelint.syntax;
   config = settings.stylelint.config;
   configOverrides = settings.stylelint.configOverrides;
 
