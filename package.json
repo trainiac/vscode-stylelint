@@ -33,8 +33,6 @@
     "onLanguage:postcss",
     "onLanguage:scss",
     "onLanguage:sugarss",
-    "onLanguage:vue",
-    "onLanguage:html",
     "workspaceContains:node_modules/stylelint-processor-styled-components/package.json"
   ],
   "main": "index.js",
@@ -75,7 +73,7 @@
           "type": [ "string", "null"],
           "default": "null",
           "description": "Set the stylelint syntax."
-        },
+        }
       }
     },
     "jsonValidation": [
