@@ -1,12 +1,12 @@
 {
-  "name": "stylelint",
-  "version": "0.30.0",
-  "displayName": "stylelint",
+  "name": "stylelint-trainiac",
+  "version": "0.0.1",
+  "displayName": "stylelint-trainiac",
   "description": "Modern CSS/SCSS/Less linter",
   "publisher": "shinnn",
-  "repository": "https://github.com/shinnn/vscode-stylelint",
-  "homepage": "https://github.com/shinnn/vscode-stylelint#readme",
-  "bugs": "https://github.com/shinnn/vscode-stylelint/issues",
+  "repository": "https://github.com/trainiac/vscode-stylelint",
+  "homepage": "https://github.com/trainiac/vscode-stylelint#readme",
+  "bugs": "https://github.com/trainiac/vscode-stylelint/issues",
   "license": "MIT",
   "icon": "media/icon.png",
   "galleryBanner": {

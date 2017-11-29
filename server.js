@@ -29,6 +29,10 @@ function validate(document) {
     options.configOverrides = configOverrides;
   }
 
+  if (document.languageId === 'vue') {
+    options.syntax = 'scss'
+  }
+
   if (supportedCustomSyntaxes.has(document.languageId)) {
     options.syntax = document.languageId;
   }
