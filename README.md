@@ -57,13 +57,12 @@ Default: `[]`
 
 Document types that you can use to run stylelint against if you are using CSS inside document types like: `javascriptreact`, `typescriptreact` or `vue`.
 
-+#### stylelint.syntax
-+
-+Type: `String`
-+Default: `null`
-+
-+Stylelint needs a custom parser for scss and less files. If the file you are linting is a .less or .scss file, no worries, this vscode-stylelint will automatically configure stylelint for you. However, if you have are trying to lint a file that is not on of those file types but still uses less or scss syntax, you must specify the syntax with this option.
-+
+#### stylelint.syntax
+
+Type: `String`
+Default: `null`
+
+Stylelint needs a custom parser for scss and less files. If the file you are linting is a .less or .scss file, no worries, this vscode-stylelint will automatically configure stylelint for you. However, if you have are trying to lint a file that is not on of those file types but still uses less or scss syntax, you must specify the syntax with this option.
 
 ## License
 
